@@ -1,0 +1,3 @@
+[submodule "full_stack_oauth2"]
+	path = full_stack_oauth2
+	url = https://github.com/lspil/full_stack_oauth2.git
