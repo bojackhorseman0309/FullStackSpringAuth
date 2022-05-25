@@ -1,27 +1,32 @@
-# Oauth2Angular
+# Install Angular CLI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+`npm i -g @angular/cli`
+`sudo npm i -g @angular/cli`
 
-## Development server
+# Start the project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+`npm install` to install packages
+`npm start` starting the application
 
-## Code scaffolding
+# Stop previous application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`netstat -aon | grep 3000` command will give us the port <PORTNO>
+`tskill <PORTNO>` for windows
+`npx kill-port 3000` for MAC
 
-## Build
+# Create app-routing module and tie it to app module
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`ng generate module app-routing --module app --flat` same command as
+`ng g m app-routing --module app --flat`
 
-## Running unit tests
+# Create AuthComponent
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`ng g c auth --module app`
 
-## Running end-to-end tests
+# Create HomeComponent
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+`ng g c home --module app`
 
-## Further help
+# Install buffer package for base64 encoding
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`npm i buffer`

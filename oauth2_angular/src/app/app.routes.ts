@@ -1,14 +1,13 @@
 import { AuthComponent } from './auth/auth.component';
 import { HomeComponent } from './home/home.component';
-
-const redirectToUrl = '';
+import { LoginComponent } from './login/login.component';
 
 const routes = [
-  { route: 'home', component: HomeComponent, pathMatch: 'full' },
-  { route: 'auth', component: AuthComponent, pathMatch: 'full' },
-  { route: '', redirectTo: 'auth', pathMatch: 'full' },
-  { route: 'authorized', redirectTo: 'auth', pathMatch: 'full' },
-  { route: 'login', redirectTo: redirectToUrl, pathMatch: 'full' },
+  { path: 'home', component: HomeComponent, pathMatch: 'full' },
+  { path: 'auth', component: AuthComponent, pathMatch: 'full' },
+  { path: '', redirectTo: 'auth', pathMatch: 'full' },
+  { path: 'authorized', redirectTo: 'auth', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent, pathMatch: 'full' },
 ];
 
 export default routes;
